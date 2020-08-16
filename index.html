@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="survey.css">
+    <title>Covid-19 Survey</title>
+    <main id="main">
+        <div class="container">
+        <header class="header">
+        <h1 id="title">Covid-19 Survey Form</h1>
+        <p id="description">Thank you for taking the survey. Let's break the chain.       </p>
+        </header>
+        <form id="survey-form">
+        <div class="form-detail">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" class="form-control" type= "text" name= "name" placeholder= "Enter your name" required/> 
+        </div>
+        <div class="form-detail">
+            <label id="email-label" for="email">E-mail</label>
+            <input id="email" class="form-control" type= "email" name= "email" placeholder= "Enter your e-mail" required/> 
+        </div>
+        <div class="form-detail">
+            <label id="number-label" for="age">Age</label>
+            <input id="number" class="form-control" type= "number" name= "age" min="10" max="99" placeholder= "Age" required/> 
+        </div>
+        <div class="form-detail">
+            <p>Do you face any discomfort?</p>
+            <label>
+                <input name="discomfort"
+                    value="cold"
+                    type="checkbox"
+                    class="check-inputs"/>Cold
+            </label>
+            <label>
+                <input name="discomfort"
+                    value="cough"
+                    type="checkbox"
+                    class="check-inputs"/>Cough
+            </label>
+            <label>
+                <input name="discomfort"
+                    value="breathing-problem"
+                    type="checkbox"
+                    class="check-inputs"/>Breathing Problem
+            </label>
+            <label>
+                <input name="discomfort"
+                    value="none"
+                    type="checkbox"
+                    class="check-inputs"/>None
+            </label>
+        </div>
+        <div class="form-detail">
+            <p>Do you have any medical problem?</p>
+            <label>
+            <input name="y/n"
+                    value="yes"
+                    type="radio"
+                    class="input-radio"/>Yes
+            </label>
+            <label>
+            <input name="y/n"
+                    value="no"
+                    type="radio"
+                    class="input-radio"/>No
+            </label>
+        </div>
+        <div class="form-detail">
+            <p>If yes, what is your medical problem?</p>
+            <input id="mediproblem" class="form-control" type= "text" name= "mediproblem"  placeholder= "your medical problem" required/> 
+        </div>
+        <div class="form-detail">
+            <p>Do you follow all Covid-19 rules?</p>
+            <label>
+            <input name="y/n"
+                    value="yes"
+                    type="radio"
+                    class="input-radio"/>Yes
+            </label>
+        <label>
+            <input name="y/n"
+                    value="no"
+                    type="radio"
+                    class="input-radio"/>No
+            </label>
+        </div>
+            <div class="form-detail">
+            <p>How many members are there at your home?</p>
+            <select id="dropdown" class="form-control" required>
+            <option disabled selected value>Select option</option>
+            <option value="less">less than 3</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="6">5</option>
+            <option value="more">more than 5</option>
+            </select>  
+        </div>
+            <div class="form-detail">
+            <p>Do you have any comments or suggestions?</p>
+            <textarea id="textarea" class="input-textarea" name="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+            <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+            Submit
+            </button>
+        </div>
+            </form>
+        </div>
+    </main>
+</html>
